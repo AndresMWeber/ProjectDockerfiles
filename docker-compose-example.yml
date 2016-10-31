@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mpc:
+    image: daemonecles/mpc
+    build: ./mpc
+    volumes:
+      - ./my_codes:/software
+    command: python /software/me_codes.py
+
